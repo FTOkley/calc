@@ -1,21 +1,23 @@
-const display = document.querySelector("#display");
+// const display = document.querySelector("#display");
 const input = document.querySelectorAll("input");
 let value = "";
 var themeA = document.querySelector("#first");
 var themeB = document.querySelector("#second");
 var themeC = document.querySelector("#third");
-var screen = document.querySelector("#display");
+// var screen = document.querySelector("#display");
 // var answer = document.querySelector(".row");
-const keys = document.querySelectorAll('.key');
-
+var keys = document.querySelectorAll('.key');
+var screen = document.getElementById('display');
 var backMain = document.getElementsByTagName("body");
 var backToggle = document.getElementsByClassName("switchbox");
 var backKeypad = document.getElementsByClassName("keypads");
 var backDisplay = document.getElementsByClassName("display");
 var backKey = document.getElementsByClassName("key");
-var shadow = document.querySelectorAll(".key");
+// var shadow = document.querySelectorAll(".key");
 var calcBody = document.getElementsByClassName("calculator");
-var answer = document.getElementsByClassName("row.button");
+var answers = document.getElementById("answer");
+var reset = document.getElementById("reset");
+var del = document.getElementById("del");
 
 //   switchBtn.addEventListener("click", () => {
 //     //console.log('toggle theme');
@@ -69,7 +71,7 @@ arr.forEach((element, index) => {
       calcBody[0].style.backgroundColor = "hsl(222, 26%, 31%)";
       backToggle[0].style.backgroundColor = "hsl(223, 31%, 20%)";
       backKeypad[0].style.backgroundColor = "hsl(223, 31%, 20%)";
-      screen[0].style.backgroundColor = "hsl(224, 36%, 15%)";
+      // screen[0].style.backgroundColor = "hsl(224, 36%, 15%)";
       // backKey[0].style.backgroundColor = "hsl(223, 31%, 20%)";
       
       keys.forEach(key => {
@@ -148,25 +150,42 @@ arr.forEach((element, index) => {
       // console.log( document.getElementsByTagName("body")[0].style.backgroundColor ="hsl(268, 75%, 9%)");
 
       //backKeypad[0].style.backgroundColor = "hsl(268, 71%, 12%)";
-      // themeC[0].style.color = "hsl(268, 71%, 12%)";
+     
+      // keys.style["boxShadow"] = "10px 10px hsl(177, 92%, 70%)"
+      //  themeC[0].style.color = "hsl(268, 71%, 12%)";
+      //  themeC[0].style.opacity = "1";
       backMain[0].style.backgroundColor = "hsl(268, 75%, 9%)";
       calcBody[0].style.backgroundColor = "hsl(268, 75%, 9%)";
       backToggle[0].style.backgroundColor = "hsl(268, 71%, 12%)";
       backKeypad[0].style.backgroundColor = "hsl(268, 71%, 12%)";
       backKey[0].style.backgroundColor = "hsl(281, 89%, 26%)";
+      console.log( screen.style["backgroundColor"] = "hsl(268, 71%, 12%");
+      console.log( screen.style["color"] = "hsl(52, 100%, 62%)");
       
       keys.forEach(key => {
         key.style.backgroundColor = "hsl(268, 47%, 21%)";
       });
+      
+      keys.forEach(key => {
+        key.style.color = "hsl(52, 100%, 62%)";
+      });
 
-
-
-      /*shadow.forEach(keys => {
-        shadow.style.boxShadow = "0px 5px blue";
+      keys.forEach(key => {
+        key.style.boxShadow = "0px 5px hsl(285, 91%, 52%)";
       });
       // console.log(shadow.forEach(key));
+      answers.style["boxShadow"] = "0 5px hsl(177, 92%, 70%)";
+      console.log( answers.style["backgroundColor"] = "hsl(176, 100%, 44%)");
+      console.log( answers.style["color"] = "hsl(198, 20%, 13%)");
+      
 
+      reset.style["boxShadow"] = "0 5px hsl(285, 91%, 52%)";
+      reset.style["backgroundColor"] = "hsl(281, 89%, 26%)";
 
+      del.style["boxShadow"] = "0 5px hsl(285, 91%, 52%)";
+      del.style["backgroundColor"] = "hsl(281, 89%, 26%)";
+
+/*
       
       //calculator background
       document.getElementsByClassName("calculator")[0].style.backgroundColor = "hsl(268, 75%, 9%)";
