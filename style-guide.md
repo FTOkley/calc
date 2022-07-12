@@ -18,13 +18,13 @@ The designs were created to the following widths:
 - Very dark desaturated blue (screen background): hsl(224, 36%, 15%)
 
 #### Keys
-
+del
 - Desaturated dark blue (key background): hsl(225, 21%, 49%)
 - Desaturated dark blue (key shadow): hsl(224, 28%, 35%)
-
+answer
 - Red (key background, toggle): hsl(6, 63%, 50%)
 - Dark red (key shadow): hsl(6, 70%, 34%)
-
+numbers
 - Light grayish orange (key background): hsl(30, 25%, 89%)
 - Grayish orange (key shadow): hsl(28, 16%, 65%)
 
@@ -42,13 +42,13 @@ The designs were created to the following widths:
 - Very light gray (screen background): hsl(0, 0%, 93%)
 
 #### Keys
-
+reset
 - Dark moderate cyan (key background): hsl(185, 42%, 37%)
 - Very dark cyan (key shadow): hsl(185, 58%, 25%)
 
 - Orange (key background, toggle): hsl(25, 98%, 40%)
 - Dark orange (key shadow): hsl(25, 99%, 27%)
-
+number
 - Light grayish yellow (key background): hsl(45, 7%, 89%)
 - Dark grayish orange (key shadow): hsl(35, 11%, 61%)
 

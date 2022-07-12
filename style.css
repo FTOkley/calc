@@ -21,37 +21,42 @@ body {
 }
 .header {
   display: flex;
-  /* padding: 30px 0; */
   position: relative;
-  border: 1px solid rgb(208, 255, 0);
+  /* border: 1px solid rgb(208, 255, 0); */
 }
+
+/* Text above the screen */
 .name {
   margin-top: 30px;
   color: aliceblue;
   font-size: 2.5rem;
   font-weight: 700;
   font-family: league Spartan;
+  position: relative;
+  bottom: 20px;
+}
+.toggle {
+  display: flex;
+  margin-top: 20px;
 }
 .switch {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   position: absolute;
   left: 70%;
   transform: translateX(-50%);
 }
 .theme {
-  /* padding-right: 5px; */
-  margin-right: 20px;
+  padding-right: 20px;
+  /* border: 1px solid red; */
   font-weight: 700;
   font-family: league Spartan;
 }
 .number ul {
   display: flex;
   position: relative;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   list-style: none;
-  /* margin-top: 20px; */
   justify-content: center;
-  /* padding-left: 25px; */
   float: right;
 }
 .number li {
@@ -61,7 +66,7 @@ body {
 /* Theme toggle */
 .switchbox input {
   height: 20px;
-  width: 25px;
+  width: 22px;
   appearance: none;
   border-radius: 50%;
   opacity: 0;
@@ -73,18 +78,20 @@ body {
 }
 #second:checked {
   opacity: 1;
-  background-color: hsl(6, 63%, 50%);
+  background-color: hsl(25, 98%, 40%);
+}
+#third:checked {
+  opacity: 1;
+  background-color: hsl(186, 63%, 50%);
 }
 
 .switchbox {
   display: flex;
   width: 75px;
   justify-content: center;
-  border: 3px solid rgb(229, 102, 102);
+  /* border: 3px solid rgb(229, 102, 102); */
   float: right;
-  /* margin-right: 20px; */
   border-radius: 50px;
-  /* background: hsl(223, 95%, 38%); */
   cursor: pointer;
 }
 
@@ -109,7 +116,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: space-evenly; */
   column-gap: 20px;
   width: 100%;
   background-color: hsl(223, 31%, 20%);
@@ -129,24 +135,20 @@ body {
   height: 80px;
   margin: 6px;
   outline: none;
+  border: none;
   background: rgb(252, 245, 232);
   /* box-shadow: 0 5px hsl(224, 28%, 35%); */
   border-radius: 10px;
   font-size: 2rem;
   font-weight: 900;
+  cursor: pointer;
 }
 
-#third:checked {
-  opacity: 1;
-  background-color: hsl(186, 63%, 50%);
-}
-.key #third:checked {
-  box-shadow: 0 5px hsl(290, 70%, 36%);
-}
 
 .bottom input {
   width: calc(540px / 2.25);
 }
+
 #del,
 #reset {
   border: none;
@@ -162,13 +164,11 @@ body {
   border: none;
 }
 
-/* Theme 1 */
-/* background */
-/* .first {
-  /* background: hsl(222, 26%, 31%); */
-
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 375px) {
   .claculator {
     width: 400px;
+  }
+  .bottom input {
+    width: calc(400px / 2.25);
   }
 }

@@ -13,7 +13,8 @@ var backToggle = document.getElementsByClassName("switchbox");
 var backKeypad = document.getElementsByClassName("keypads");
 var backDisplay = document.getElementsByClassName("display");
 var backKey = document.getElementsByClassName("key");
-// var shadow = document.querySelectorAll(".key");
+var text = document.getElementsByClassName("name");
+
 var calcBody = document.getElementsByClassName("calculator");
 var answers = document.getElementById("answer");
 var reset = document.getElementById("reset");
@@ -67,6 +68,40 @@ arr.forEach((element, index) => {
     element.style.opacity = "1";
     if (index == 0) {
 
+
+      backMain[0].style.backgroundColor = "hsl(222, 26%, 31%)";
+      calcBody[0].style.backgroundColor = "hsl(222, 26%, 31%)";
+      backToggle[0].style.backgroundColor = "hsl(223, 31%, 20%)";
+      backKeypad[0].style.backgroundColor = "hsl(223, 31%, 20%)";
+      backKey[0].style.backgroundColor = "hsl(281, 89%, 26%)";
+      console.log( screen.style["backgroundColor"] = "hsl(224, 36%, 15%)");
+      console.log( screen.style["color"] = "hsl(0, 0, 100%)");
+      
+      keys.forEach(key => {
+        key.style.backgroundColor = "hsl(30, 25%, 89%)";
+      });
+      
+      keys.forEach(key => {
+        key.style.color = "hsl(221, 14%, 31%)";
+      });
+
+      keys.forEach(key => {
+        key.style.boxShadow = "0px 5px hsl(28, 16%, 65%)";
+      });
+      
+      answers.style["boxShadow"] = "0 5px hsl(6, 70%, 34%)";
+      console.log( answers.style["backgroundColor"] = "hsl(6, 63%, 50%)");
+      console.log( answers.style["color"] = "hsl(198, 20%, 13%)");
+      
+
+      reset.style["boxShadow"] = "0 5px hsl(224, 28%, 35%)";
+      reset.style["backgroundColor"] = "hsl(225, 21%, 49%)";
+
+      del.style["boxShadow"] = "0 5px hsl(224, 28%, 35%)";
+      del.style["backgroundColor"] = "hsl(225, 21%, 49%)";
+
+
+/*
       backMain[0].style.backgroundColor = "hsl(222, 26%, 31%)";
       calcBody[0].style.backgroundColor = "hsl(222, 26%, 31%)";
       backToggle[0].style.backgroundColor = "hsl(223, 31%, 20%)";
@@ -81,7 +116,7 @@ arr.forEach((element, index) => {
 
 
 
-      /*
+      
       document.getElementsByTagName("body")[0].style.backgroundColor =
         "hsl(222, 26%, 31%)";
 
@@ -115,8 +150,39 @@ arr.forEach((element, index) => {
         */
     } else if (index == 1) {
       
-      // document.getElementsByTagName("body")[0].style.backgroundColor ="hsl(0, 0%, 90%)";
+      backMain[0].style.backgroundColor = "hsl(0, 0%, 90%)";
+      calcBody[0].style.backgroundColor = "hsl(0, 0%, 90%)";
+      backToggle[0].style.backgroundColor = "hsl(0, 5%, 81%)";
+      backKeypad[0].style.backgroundColor = "hsl(0, 5%, 81%)";
+      backKey[0].style.backgroundColor = "hsl(281, 89%, 26%)";
+      console.log( screen.style["backgroundColor"] = "hsl(0, 0%, 93%)");
+      console.log( screen.style["color"] = "hsl(60, 10%, 19%)");
+      
+      keys.forEach(key => {
+        key.style.backgroundColor = "hsl(45, 7%, 89%)";
+      });
+      
+      keys.forEach(key => {
+        key.style.color = "hsl(60, 10%, 19%)";
+      });
 
+      keys.forEach(key => {
+        key.style.boxShadow = "0px 5px hsl(35, 11%, 61%)";
+      });
+      
+      answers.style["boxShadow"] = "0 5px hsl(25, 99%, 27%)";
+      console.log( answers.style["backgroundColor"] = "hsl(25, 98%, 40%)");
+      console.log( answers.style["color"] = "hsl(198, 20%, 13%)");
+      
+
+      reset.style["boxShadow"] = "0 5px hsl(185, 58%, 25%)";
+      reset.style["backgroundColor"] = "hsl(185, 42%, 37%)";
+
+      del.style["boxShadow"] = "0 5px hsl(185, 58%, 25%)";
+      del.style["backgroundColor"] = "hsl(185, 42%, 37%)";
+
+      // document.getElementsByTagName("body")[0].style.backgroundColor ="hsl(0, 0%, 90%)";
+/*
         backMain[0].style.backgroundColor = "hsl(0, 0%, 90%)";
         calcBody[0].style.backgroundColor = "hsl(0, 0%, 90%)";
         backToggle[0].style.backgroundColor = "hsl(0, 5%, 81%)";
@@ -127,7 +193,7 @@ arr.forEach((element, index) => {
           key.style.backgroundColor = "hsl(45, 7%, 89%)";
         });
   
-/*
+
       //calculator background
       document.getElementsByClassName("calculator")[0].style.backgroundColor =
         "hsl(0, 0%, 90%)";
@@ -173,7 +239,7 @@ arr.forEach((element, index) => {
       keys.forEach(key => {
         key.style.boxShadow = "0px 5px hsl(285, 91%, 52%)";
       });
-      // console.log(shadow.forEach(key));
+      
       answers.style["boxShadow"] = "0 5px hsl(177, 92%, 70%)";
       console.log( answers.style["backgroundColor"] = "hsl(176, 100%, 44%)");
       console.log( answers.style["color"] = "hsl(198, 20%, 13%)");
@@ -184,6 +250,8 @@ arr.forEach((element, index) => {
 
       del.style["boxShadow"] = "0 5px hsl(285, 91%, 52%)";
       del.style["backgroundColor"] = "hsl(281, 89%, 26%)";
+
+    // console.log( text.style.color = "hsl(52, 100%, 62%)");
 
 /*
       
