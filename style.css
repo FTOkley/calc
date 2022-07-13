@@ -170,7 +170,8 @@ body {
 @media screen and (max-width: 600px) {
   .claculator {
     width: 400px;
-    
+    margin-left: 10px;
+    margin-right: 10px;
   }
   .bottom input {
     width: calc(400px / 2.4);
