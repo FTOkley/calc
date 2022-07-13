@@ -42,8 +42,9 @@ body {
 .switch {
   /* border: 1px solid red; */
   position: absolute;
-  left: 70%;
-  transform: translateX(-50%);
+ right: 0%;
+ font-weight: 800;
+  /* transform: translateX(-50%); */
 }
 #theme {
   padding-right: 20px;
@@ -58,9 +59,10 @@ body {
   list-style: none;
   justify-content: center;
   float: right;
+  right: 5px;
 }
 #number li {
-  letter-spacing: 15px;
+  padding-left: 20px;
 }
 
 /* Theme toggle */

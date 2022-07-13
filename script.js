@@ -61,11 +61,13 @@ arr.forEach((element, index) => {
 
       //Texts and text areas
       screen.style["backgroundColor"] = "hsl(224, 36%, 15%)";
-      screen.style["color"] = "hsl(0, 0, 100%)";
-      console.log((txt.style["color"] = "hsl(0, 0, 100%)"));
-      console.log((numb.style["color"] = "hsl(0, 0, 100%)"));
-      console.log((toggle.style["color"] = "hsl(0, 0, 100%)"));
+      screen.style["color"] = "white";
+      console.log((txt.style["color"] = "white"));
+      console.log((numb.style["color"] = "white"));
+      console.log((toggle.style["color"] = "white"));
 
+
+      //keypads
       keys.forEach((key) => {
         key.style.backgroundColor = "hsl(30, 25%, 89%)";
       });
@@ -87,26 +89,30 @@ arr.forEach((element, index) => {
 
       del.style["boxShadow"] = "0 5px hsl(224, 28%, 35%)";
       del.style["backgroundColor"] = "hsl(225, 21%, 49%)";
+
     } else if (index == 1) {
+      //main backgrounds
       backMain[0].style.backgroundColor = "hsl(0, 0%, 90%)";
       calcBody[0].style.backgroundColor = "hsl(0, 0%, 90%)";
       backToggle[0].style.backgroundColor = "hsl(0, 5%, 81%)";
       backKeypad[0].style.backgroundColor = "hsl(0, 5%, 81%)";
       backKey[0].style.backgroundColor = "hsl(281, 89%, 26%)";
+
+      //texts and text areas
       screen.style["backgroundColor"] = "hsl(0, 0%, 93%)";
       screen.style["color"] = "hsl(60, 10%, 19%)";
       txt.style["color"] = "hsl(60, 10%, 19%)";
       numb.style["color"] = "hsl(60, 10%, 19%)";
       toggle.style["color"] = "hsl(60, 10%, 19%)";
 
+
+      //keypads
       keys.forEach((key) => {
         key.style.backgroundColor = "hsl(45, 7%, 89%)";
       });
-
       keys.forEach((key) => {
         key.style.color = "hsl(60, 10%, 19%)";
       });
-
       keys.forEach((key) => {
         key.style.boxShadow = "0px 5px hsl(35, 11%, 61%)";
       });
@@ -121,17 +127,22 @@ arr.forEach((element, index) => {
       del.style["boxShadow"] = "0 5px hsl(185, 58%, 25%)";
       del.style["backgroundColor"] = "hsl(185, 42%, 37%)";
     } else {
+      //Main Backgrounds
       backMain[0].style.backgroundColor = "hsl(268, 75%, 9%)";
       calcBody[0].style.backgroundColor = "hsl(268, 75%, 9%)";
       backToggle[0].style.backgroundColor = "hsl(268, 71%, 12%)";
       backKeypad[0].style.backgroundColor = "hsl(268, 71%, 12%)";
       backKey[0].style.backgroundColor = "hsl(281, 89%, 26%)";
+
+//Texts and text areas
       screen.style["backgroundColor"] = "hsl(268, 71%, 12%)";
       screen.style["color"] = "hsl(52, 100%, 62%)";
       txt.style["color"] = "hsl(52, 100%, 62%)";
       toggle.style["color"] = "hsl(52, 100%, 62%)";
       numb.style["color"] = "hsl(52, 100%, 62%)";
 
+
+      //Keypads
       keys.forEach((key) => {
         key.style.backgroundColor = "hsl(268, 47%, 21%)";
       });
