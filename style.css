@@ -26,7 +26,7 @@ body {
 }
 
 /* Text above the screen */
-.name {
+#name {
   margin-top: 30px;
   color: aliceblue;
   font-size: 2.5rem;
@@ -45,13 +45,13 @@ body {
   left: 70%;
   transform: translateX(-50%);
 }
-.theme {
+#theme {
   padding-right: 20px;
   /* border: 1px solid red; */
   font-weight: 700;
   font-family: league Spartan;
 }
-.number ul {
+#number ul {
   display: flex;
   position: relative;
   /* border: 1px solid red; */
@@ -59,7 +59,7 @@ body {
   justify-content: center;
   float: right;
 }
-.number li {
+#number li {
   letter-spacing: 15px;
 }
 
