@@ -15,10 +15,13 @@ body {
 }
 
 .calculator {
+
   border: 1px solid red;
-  width: 60%;
+  width: 50%;
   justify-content: center;
   background: hsl(222, 26%, 31%);
+  margin: 1rem;
+  padding: 1rem;
 }
 .header {
   display: flex;
@@ -179,7 +182,9 @@ body {
 .del,
 .reset {
   height: 4.5rem;
+ 
   margin: .5rem .5rem;
+  font-size: large;
   
 }
 .bottom input {
