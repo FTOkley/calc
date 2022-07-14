@@ -153,7 +153,8 @@ body {
 }
 
 .bottom input {
-  width: calc(100% / 2.4);
+  width: calc(100% / 2.3);
+  height: 4rem;
 }
 
 #del,
