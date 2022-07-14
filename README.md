@@ -25,7 +25,7 @@ The users should be able to:<br>
 
 <h2> Link To Page </h2>
 
-  1. Live URL: <a href="https://ftokley.github.io/calc/"  target="_blank">Equelizer Landing Page</a><br>
+  1. Live URL: <a href="https://ftokley.github.io/calc/"  target="_blank">Simple calculator</a><br>
   2. Solution: <a href="https://github.com/FTOkley/calc" target="_blank">Solution Manual</a>
   
  <h2> Built With </h2>
