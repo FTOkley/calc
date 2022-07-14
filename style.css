@@ -15,8 +15,7 @@ body {
 }
 
 .calculator {
-
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 50%;
   justify-content: center;
   background: hsl(222, 26%, 31%);
@@ -42,6 +41,8 @@ body {
 .toggle {
   display: flex;
   margin-top: 20px;
+  color: aliceblue;
+
 }
 .switch {
   /* border: 1px solid red; */
@@ -67,6 +68,8 @@ body {
 }
 #number li {
   padding-left: 20px;
+  /* color: aliceblue; */
+
 }
 
 /* Theme toggle */
@@ -121,13 +124,13 @@ body {
 .keypads {
   width: 100%;
   background-color: hsl(223, 31%, 20%);
-  color: hsl(221, 14%, 31%);
+  /* color: hsl(221, 14%, 31%); */
   border-radius: 10px;
   font-size: 2rem;
   font-weight: 700;
-  border: 1px solid green;
-
+  /* border: 1px solid green; */
   justify-content: center;
+  padding: 2rem 0;
 }
 .row {
   display: flex;
@@ -138,7 +141,7 @@ body {
 .del,
 .reset {
   width: calc(100% /5);
-  height: 5rem;
+  height: 6rem;
   margin: .5rem .5rem;
   outline: none;
   border: none;
@@ -183,7 +186,6 @@ body {
 .del,
 .reset {
   height: 4.5rem;
- 
   margin: .5rem .5rem;
   font-size: large;
   
