@@ -16,7 +16,9 @@ body {
 
 .calculator {
   border: 1px solid red;
-  width: 540px;
+  width: 60%;
+  /* margin: 0 10px; */
+  /* width: 540px; */
   background: hsl(222, 26%, 31%);
 }
 .header {
@@ -115,10 +117,10 @@ body {
 
 /* KEYPADS */
 .keypads {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  column-gap: 20px;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* column-gap: 20px; */
   width: 100%;
   background-color: hsl(223, 31%, 20%);
   padding: 10px 0;
@@ -126,16 +128,29 @@ body {
   border-radius: 10px;
   font-size: 2rem;
   font-weight: 700;
+  border: 1px solid green;
   /* color: hsl(281, 89%, 26%); */
+  /* justify-content: space-between; */
+  /* align-content: space-between; */
 }
-
+.row{
+  display: flex;
+  width: 90%;
+  /* margin: 1rem; */
+  /* column-gap: 1rem;
+  row-gap: 1rem; */
+  justify-content: center;
+ /* align-items: center; */
+ /* width: 100%; */
+}
 .key,
 .answer,
 .del,
 .reset {
-  width: calc(540px / 5);
-  height: 80px;
-  margin: 6px;
+  /* width: calc(540px / 5); */
+  width: calc(100%/ 5);
+  height: 5rem;
+  /* margin: 6px; */
   outline: none;
   border: none;
   background: rgb(252, 245, 232);
@@ -144,10 +159,12 @@ body {
   font-size: 2rem;
   font-weight: 900;
   cursor: pointer;
+  border: 1px solid yellow;
 }
 
 .bottom input {
-  width: calc(540px / 2.25);
+  width: calc(100%/ 2.4);
+  /* width: calc(540px / 2.25); */
 }
 
 #del,
@@ -156,6 +173,7 @@ body {
   background: hsl(225, 21%, 49%);
   color: white;
   box-shadow:0px 5px hsl(224, 9%, 40%);
+  
 }
 #answer {
   background: hsl(6, 70%, 34%);
@@ -166,7 +184,7 @@ body {
   border: none;
   box-shadow: 0px 5px hsl(6, 58%, 65%);
 }
-
+/* 
 @media screen and (max-width: 600px) {
   .claculator {
     width: 400px;
@@ -192,4 +210,4 @@ body {
   cursor: pointer;
 }
 
-}
+} */
