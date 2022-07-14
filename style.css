@@ -18,8 +18,6 @@ body {
   border: 1px solid red;
   width: 60%;
   justify-content: center;
-  /* margin: 0 10px; */
-  /* width: 540px; */
   background: hsl(222, 26%, 31%);
 }
 .header {
@@ -45,9 +43,9 @@ body {
 .switch {
   /* border: 1px solid red; */
   position: absolute;
- right: 0%;
- font-weight: 800;
-  /* transform: translateX(-50%); */
+  right: 0%;
+  font-weight: 800;
+  
 }
 #theme {
   padding-right: 20px;
@@ -118,10 +116,6 @@ body {
 
 /* KEYPADS */
 .keypads {
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* align-items: center; */
-  /* column-gap: 20px; */
   width: 100%;
   background-color: hsl(223, 31%, 20%);
   /* padding: 10px 0; */
@@ -130,29 +124,24 @@ body {
   font-size: 2rem;
   font-weight: 700;
   border: 1px solid green;
-  /* color: hsl(281, 89%, 26%); */
+
   justify-content: center;
-  /* align-content: space-between; */
 }
-.row{
+.row {
   display: flex;
   justify-content: center;
- /* align-items: center; */
- /* width: 100%; */
 }
 .key,
 .answer,
 .del,
 .reset {
-  /* width: calc(540px / 5); */
-  width: calc(100%/ 5);
+  width: calc(100% / 5);
   height: 5rem;
   margin: 1rem 1rem;
-  /* gap: 1rem; */
   outline: none;
   border: none;
   background: rgb(252, 245, 232);
-  box-shadow:0px 5px hsl(28, 16%, 65%);
+  box-shadow: 0px 5px hsl(28, 16%, 65%);
   border-radius: 10px;
   font-size: 2rem;
   font-weight: 900;
@@ -162,8 +151,7 @@ body {
 }
 
 .bottom input {
-  width: calc(100%/ 2.4);
-  /* width: calc(540px / 2.25); */
+  width: calc(100% / 2.4);
 }
 
 #del,
@@ -171,8 +159,7 @@ body {
   border: none;
   background: hsl(225, 21%, 49%);
   color: white;
-  box-shadow:0px 5px hsl(224, 9%, 40%);
-  
+  box-shadow: 0px 5px hsl(224, 9%, 40%);
 }
 #answer {
   background: hsl(6, 70%, 34%);
@@ -183,7 +170,7 @@ body {
   border: none;
   box-shadow: 0px 5px hsl(6, 58%, 65%);
 }
-/* 
+ 
 @media screen and (max-width: 600px) {
   .claculator {
     width: 400px;
@@ -198,7 +185,7 @@ body {
 .reset {
   width: calc(400px/5.5);
   height: 3.8rem;
-  /* margin: 6px; *
+  margin: 6px; *
   outline: none;
   border: none;
  
@@ -209,4 +196,4 @@ body {
   cursor: pointer;
 }
 
-} */
+} 
