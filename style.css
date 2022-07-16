@@ -141,7 +141,8 @@ body {
   justify-content: center;
 }
 .key,
-.answer,
+.answer,.del,
+.reset
  {
   width: calc(100% /5);
   height: 6rem;
