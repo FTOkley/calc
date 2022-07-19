@@ -218,15 +218,5 @@ body {
   .calculator {
     width: 100%;
   }
-  .key,
-  .answer,
-  .del,
-  .reset {
-    height: 4.5rem;
-    margin: 0.5rem 0.5rem;
-    font-size: large;
-  }
-  .bottom input {
-    width: calc(100% / 2.28);
-  }
+  
 }
