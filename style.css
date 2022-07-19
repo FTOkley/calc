@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
 
 * {
   box-sizing: border-box;
@@ -39,6 +39,7 @@ body {
   font-family: league Spartan;
   position: relative;
   bottom: 20px;
+  
 }
 .toggle {
   display: flex;
@@ -69,20 +70,21 @@ body {
   right: 5px;
 }
 #number li {
-  padding-left: 20px;
+  padding-left: 15px;
   /* color: aliceblue; */
 
 }
 
 /* Theme toggle */
 .switchbox input {
-  height: 20px;
-  width: 22px;
+  height: 15px;
+  width: 15px;
   appearance: none;
-  border-radius: 50%;
+  border-radius: 100%;
   opacity: 0;
   cursor: pointer;
-  transition: .8s;
+  transition: .4s;
+  margin: 3px 0;
 }
 #first {
   opacity: 1;
@@ -100,7 +102,7 @@ body {
 
 .switchbox {
   display: flex;
-  width: 75px;
+  width: 60px;
   justify-content: center;
   /* border: 3px solid rgb(229, 102, 102); */
   float: right;
@@ -145,7 +147,7 @@ body {
 .reset
  {
   width: calc(100% /5);
-  max-width: ;
+  /* max-width: ; */
   height: 6rem;
   margin: .5rem .5rem;
   outline: none;

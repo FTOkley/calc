@@ -17,20 +17,15 @@ let calcBody = document.getElementsByClassName("calculator");
 let answers = document.getElementById("answer");
 let reset = document.getElementById("reset");
 let del = document.getElementById("del");
-// let del = document.getElementById("del");
+
+hover = document.querySelectorAll("div");
 let txt = document.getElementById("name", "theme", "number");
 let numb = document.getElementById("number");
 let toggle = document.getElementById("theme");
 
+// backKeypad.addEventListener("mouseover", mouseon);
 
-backKeypad.addEventListener("mouseover", mouseon);
-backKeypad.addEventListener("mouseleave", mouseoff);
-
-function mouseon(e){
-  keys.style.backgroundColor =
-}
-
-
+// backKeypad.addEventListener("mouseleave", mouseoff);
 
 input.forEach((e) => {
   e.addEventListener("click", (event) => {
@@ -72,15 +67,13 @@ arr.forEach((element, index) => {
       //Texts and text areas
       screen.style["backgroundColor"] = "hsl(224, 36%, 15%)";
       screen.style["color"] = "white";
-      console.log((txt.style["color"] = "white"));
-      console.log((numb.style["color"] = "white"));
-      console.log((toggle.style["color"] = "white"));
-
+      txt.style["color"] = "white";
+      numb.style["color"] = "white";
+      toggle.style["color"] = "white";
 
       //keypads
       keys.forEach((key) => {
         key.style.backgroundColor = "hsl(30, 25%, 89%)";
-
       });
 
       keys.forEach((key) => {
@@ -91,8 +84,14 @@ arr.forEach((element, index) => {
         key.style.boxShadow = "0px 5px hsl(28, 16%, 65%)";
       });
 
+/*
+      ///do the mouse hover on keys
+      hover.addEventListener("mouseenter", mouseon());
 
-      
+      function mouseon() {
+        console.log((backKey.style.color = "black"));
+      };
+      */
 
       answers.style["boxShadow"] = "0 5px hsl(6, 70%, 34%)";
       answers.style["backgroundColor"] = "hsl(6, 63%, 50%)";
@@ -103,7 +102,6 @@ arr.forEach((element, index) => {
 
       del.style["boxShadow"] = "0 5px hsl(224, 28%, 35%)";
       del.style["backgroundColor"] = "hsl(225, 21%, 49%)";
-
     } else if (index == 1) {
       //main backgrounds
       backMain[0].style.backgroundColor = "hsl(0, 0%, 90%)";
@@ -118,7 +116,6 @@ arr.forEach((element, index) => {
       txt.style["color"] = "hsl(60, 10%, 19%)";
       numb.style["color"] = "hsl(60, 10%, 19%)";
       toggle.style["color"] = "hsl(60, 10%, 19%)";
-
 
       //keypads
       keys.forEach((key) => {
@@ -148,13 +145,12 @@ arr.forEach((element, index) => {
       backKeypad[0].style.backgroundColor = "hsl(268, 71%, 12%)";
       backKey[0].style.backgroundColor = "hsl(281, 89%, 26%)";
 
-//Texts and text areas
+      //Texts and text areas
       screen.style["backgroundColor"] = "hsl(268, 71%, 12%)";
       screen.style["color"] = "hsl(52, 100%, 62%)";
       txt.style["color"] = "hsl(52, 100%, 62%)";
       toggle.style["color"] = "hsl(52, 100%, 62%)";
       numb.style["color"] = "hsl(52, 100%, 62%)";
-
 
       //Keypads
       keys.forEach((key) => {
