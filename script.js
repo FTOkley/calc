@@ -51,7 +51,7 @@ input.forEach((e) => {
 });
 
 function numberWithCommas(x) {
-    return x.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
+  return x.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
 }
 
 //Toggle switching by backgound color////
@@ -88,23 +88,26 @@ arr.forEach((element, index) => {
         key.style.boxShadow = "0px 5px hsl(28, 16%, 65%)";
       });
 
-/*
-      ///do the mouse hover on keys
-      hover.addEventListener("mouseenter", mouseon());
-
-      function mouseon() {
-        console.log((backKey.style.color = "black"));
+      del.addEventListener("mouseover", mouseOver);
+      del.addEventListener("mouseout", mouseOut);
+      
+      function mouseOver() {
+       del.style.backgroundColor = "#A2B2E1";
       };
-      */
+      
+      function mouseOut() {
+        // del.style.backgroundColor = "#647198";
+        return default;
+      };
 
       answers.style["boxShadow"] = "0 5px hsl(6, 70%, 34%)";
       answers.style["backgroundColor"] = "hsl(6, 63%, 50%)";
-      answers.style["color"] = "hsl(198, 20%, 13%)";
+     console.log( answers.style["color"] = "hsl(0, 0, 100%)");
 
       reset.style["boxShadow"] = "0 5px hsl(224, 28%, 35%)";
       reset.style["backgroundColor"] = "hsl(225, 21%, 49%)";
 
-      del.style["boxShadow"] = "0 5px hsl(224, 28%, 35%)";
+      del.style["boxShadow"] = "inset 0px -4px 0px #414E73";
       del.style["backgroundColor"] = "hsl(225, 21%, 49%)";
     } else if (index == 1) {
       //main backgrounds
@@ -134,7 +137,7 @@ arr.forEach((element, index) => {
 
       answers.style["boxShadow"] = "0 5px hsl(25, 99%, 27%)";
       answers.style["backgroundColor"] = "hsl(25, 98%, 40%)";
-      answers.style["color"] = "hsl(198, 20%, 13%)";
+      answers.style["color"] = "hsl(0, 0, 100%)";
 
       reset.style["boxShadow"] = "0 5px hsl(185, 58%, 25%)";
       reset.style["backgroundColor"] = "hsl(185, 42%, 37%)";
