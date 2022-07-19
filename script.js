@@ -50,6 +50,10 @@ input.forEach((e) => {
   });
 });
 
+function numberWithCommas(x) {
+    return x.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
+}
+
 //Toggle switching by backgound color////
 var buttons = document.querySelectorAll(".button");
 var arr = [...buttons];
