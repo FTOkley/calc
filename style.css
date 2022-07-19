@@ -180,8 +180,7 @@ body {
   display: flex;
   align-items: center;
   text-align: center;
-  
-  letter-spacing: -0.666667px;
+  /* letter-spacing: -0.666667px; */
 
   color: #36362c;
 }
