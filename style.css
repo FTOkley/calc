@@ -222,5 +222,10 @@ body {
 
 width: fit-content;
 }
+
+.key{
+Width: 64px;
+Height: 64px;
+}
   
 }
