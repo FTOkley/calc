@@ -1,26 +1,36 @@
 // const display = document.querySelector("#display");
 const input = document.querySelectorAll("input");
 let value = "";
-var themeA = document.querySelector("#first");
-var themeB = document.querySelector("#second");
-var themeC = document.querySelector("#third");
+let themeA = document.querySelector("#first");
+let themeB = document.querySelector("#second");
+let themeC = document.querySelector("#third");
 
-var keys = document.querySelectorAll(".key");
-var screen = document.getElementById("display");
-var backMain = document.getElementsByTagName("body");
-var backToggle = document.getElementsByClassName("switchbox");
-var backKeypad = document.getElementsByClassName("keypads");
-var backDisplay = document.getElementsByClassName("display");
-var backKey = document.getElementsByClassName("key");
+let keys = document.querySelectorAll(".key");
+let screen = document.getElementById("display");
+let backMain = document.getElementsByTagName("body");
+let backToggle = document.getElementsByClassName("switchbox");
+let backKeypad = document.getElementsByClassName("keypads");
+let backDisplay = document.getElementsByClassName("display");
+let backKey = document.getElementsByClassName("key");
 
-var calcBody = document.getElementsByClassName("calculator");
-var answers = document.getElementById("answer");
-var reset = document.getElementById("reset");
-var del = document.getElementById("del");
-var del = document.getElementById("del");
-var txt = document.getElementById("name", "theme", "number");
-var numb = document.getElementById("number");
-var toggle = document.getElementById("theme");
+let calcBody = document.getElementsByClassName("calculator");
+let answers = document.getElementById("answer");
+let reset = document.getElementById("reset");
+let del = document.getElementById("del");
+// let del = document.getElementById("del");
+let txt = document.getElementById("name", "theme", "number");
+let numb = document.getElementById("number");
+let toggle = document.getElementById("theme");
+
+
+backKeypad.addEventListener("mouseover", mouseon);
+backKeypad.addEventListener("mouseleave", mouseoff);
+
+function mouseon(e){
+  keys.style.backgroundColor =
+}
+
+
 
 input.forEach((e) => {
   e.addEventListener("click", (event) => {
@@ -70,6 +80,7 @@ arr.forEach((element, index) => {
       //keypads
       keys.forEach((key) => {
         key.style.backgroundColor = "hsl(30, 25%, 89%)";
+
       });
 
       keys.forEach((key) => {
@@ -79,6 +90,9 @@ arr.forEach((element, index) => {
       keys.forEach((key) => {
         key.style.boxShadow = "0px 5px hsl(28, 16%, 65%)";
       });
+
+
+      
 
       answers.style["boxShadow"] = "0 5px hsl(6, 70%, 34%)";
       answers.style["backgroundColor"] = "hsl(6, 63%, 50%)";
