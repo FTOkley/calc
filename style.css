@@ -11,17 +11,17 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .calculator {
   /* border: 1px solid red; */
-  width: 50%;
+  width: 540px;
   /* height: 100vh; */
   justify-content: center;
   background: hsl(222, 26%, 31%);
-  margin: 1rem;
-  padding: 1rem;
+  margin: 0 auto;
+  /* padding: 1rem; */
 }
 .header {
   display: flex;
@@ -48,10 +48,11 @@ body {
 
 }
 .switch {
-  /* border: 1px solid red; */
+  border: 1px solid red;
   position: absolute;
   right: 0%;
   font-weight: 800;
+  max-width: 200px;
   
 }
 #theme {
@@ -131,18 +132,24 @@ body {
   align-items: flex-end;
   word-wrap: break-word;
   /* word-break: break-all; */
+  font-family: 'League Spartan';
+font-style: normal;
+font-weight: 700;
+font-size: 56px;
+line-height: 52px;
+  
 }
 
 /* KEYPADS */
 .keypads {
-  width: 100%;
+  /* width: fit-content; */
   background-color: hsl(223, 31%, 20%);
   border-radius: 10px;
   font-size: 2rem;
   font-weight: 700;
   /* border: 1px solid green; */
   justify-content: center;
-  padding: 2rem 0;
+  padding: 1rem 1rem;
 }
 .row {
   display: flex;
@@ -152,21 +159,37 @@ body {
 .answer,.del,
 .reset
  {
-  width: calc(100% /5);
-  max-width: 101px;
+  width: calc(100% /4.8);
+  min-width: 4rem;
   height: 6rem;
-  margin: .5rem .5rem;
+  margin: 1rem 1rem;
   outline: none;
   border: none;
-  background: #EAE3DC;
-  box-shadow: 0px 5px hsl(28, 16%, 65%);
-  border-radius: 10px;
-  font-size: 1.5rem;
-  font-weight: 900;
+  background: #E5E4E1;
+box-shadow: inset 0px -4px 0px #A79E91;
+border-radius: 10px;
+  /* box-shadow: 0px 5px hsl(28, 16%, 65%); */
+  /* border-radius: 10px; */
+  /* font-size: 1.5rem; */
+  /* font-weight: 900; */
   cursor: pointer;
   max-height: 64px;
   /* border: 1px solid yellow; */
-  /* justify-content: center; */
+  /* align-items: center; */
+  justify-content: center;
+  font-family: 'League Spartan';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 37px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: -0.666667px;
+
+
+color: #36362C;
+
 }
 
 .bottom input {
