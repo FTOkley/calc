@@ -59,6 +59,7 @@ body {
   /* border: 1px solid red; */
   font-weight: 700;
   font-family: league Spartan;
+  font-size: 1rem;
 }
 #number ul {
   display: flex;
