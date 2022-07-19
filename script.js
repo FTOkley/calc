@@ -22,6 +22,8 @@ hover = document.querySelectorAll("div");
 let txt = document.getElementById("name", "theme", "number");
 let numb = document.getElementById("number");
 let toggle = document.getElementById("theme");
+// del.addEventListener("mouseover", mouseOver);
+// del.addEventListener("mouseout", mouseOut);
 
 // backKeypad.addEventListener("mouseover", mouseon);
 
@@ -90,19 +92,18 @@ arr.forEach((element, index) => {
 
       del.addEventListener("mouseover", mouseOver);
       del.addEventListener("mouseout", mouseOut);
-      
+
       function mouseOver() {
-       del.style.backgroundColor = "#A2B2E1";
-      };
-      
+        del.style.backgroundColor = "#A2B2E1";
+      }
+
       function mouseOut() {
-        // del.style.backgroundColor = "#647198";
-        return default;
-      };
+
+      }
 
       answers.style["boxShadow"] = "0 5px hsl(6, 70%, 34%)";
       answers.style["backgroundColor"] = "hsl(6, 63%, 50%)";
-     console.log( answers.style["color"] = "hsl(0, 0, 100%)");
+      console.log((answers.style["color"] = "hsl(0, 0, 100%)"));
 
       reset.style["boxShadow"] = "0 5px hsl(224, 28%, 35%)";
       reset.style["backgroundColor"] = "hsl(225, 21%, 49%)";
