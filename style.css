@@ -217,5 +217,10 @@ body {
   .calculator {
     width: 100%;
   }
+
+.keypads{
+
+width: fit-content;
+
   
 }
