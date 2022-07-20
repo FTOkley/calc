@@ -21,7 +21,7 @@ body {
   align-items: center;
   justify-content: center;
   background: hsl(222, 26%, 31%);
-  margin: 0 auto;
+  margin: 32px;
   /* padding-top: 3rem; */
 }
 .header {
@@ -118,7 +118,7 @@ body {
   border: none;
   outline: none;
   text-align: right;
-  padding: 1rem 1rem;
+  padding: 2rem 1rem;
   color: white;
   background: hsl(224, 36%, 15%);
   border-radius: 10px;
@@ -160,7 +160,7 @@ body {
 .reset {
   display: flex;
   width: calc((100% - 134px) / 2);
-  /* min-width: 4rem; */
+  min-width: 4rem;
   height: 6rem;
   margin: 1rem 1rem;
   outline: none;
@@ -185,7 +185,7 @@ body {
 }
 
 .bottom input {
-  width: calc((100% - 40px) / 2);
+  width: calc((100% - 32px) / 2);
   height: 4rem;
   max-width: 227px;
   max-height: 64px;
@@ -236,7 +236,7 @@ body {
   
 } */
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 480px) {
   .calculator {
     width: 100%;
     margin: 24px;
@@ -248,24 +248,27 @@ width: 100%;
 
   .key,
   .del,
-  .reset {
+  .reset,
+  .answer{
     min-width: 30px;
     min-height: 32px;
-   width: 60px;
-   height: 64px;
+    max-width: 100px;
     margin: 0.5rem;
     font-size: 20px;
     line-height: 29px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    text-align: center;
-    /* font-size: 32px; */
+   
+
   }
   .reset,
   .answer {
-    max-width: 133px;
+    /* max-width: 134px; */
     font-size: 20px;
+    margin: 0.5rem;
+    line-height: 29px;
+    display: flex;
+    justify-content: center;
   }
   #display{
     font-size: 32px;
