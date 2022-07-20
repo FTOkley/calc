@@ -56,6 +56,37 @@ input.forEach((e) => {
   });
 });
 
+   // filter if consecutive signs
+  let signs1 = str.match(/[+\-*/]/g);
+  if (signs1.length === 2) {
+    let throwAwayOne = str.match(/[+\-*/](?=[+*/])/g);
+    if (throwAwayOne) {
+      for (let i = 0; i < throwAwayOne.length; i++) {
+        str = str.replace(throwAwayOne[i], "");
+      }
+    }
+  } else if (signs1.length > 2) {
+    let throwAwayTwo = str.match(/[+\-*/](?!\d)/g);
+    if (throwAwayTwo) {
+      for (let i = 0; i < throwAwayTwo.length; i++) {
+        str = str.replace(throwAwayTwo[i], "");
+      }
+    }
+  }
+
+  // split between <signs that don't follow another sign>.
+  let numbers = str.split(/(?<![+\-*/])[+\-*/]/).map((n) => Number(n));
+  let signs2 = str.match(/[+\-*/]/g);
+
+  let mixed = [];
+  for (let i = 0; i < numbers.length; i++) {
+    mixed.push(numbers[i]);
+    if (signs2 && i < signs2.length) mixed.push(signs2[i]);
+  }
+
+
+
+
 //Toggle switching by backgound color////
 var buttons = document.querySelectorAll(".button");
 var arr = [...buttons];

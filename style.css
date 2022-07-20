@@ -136,9 +136,10 @@ body {
   font-size: 3rem;
   line-height: 3rem;
   vertical-align: bottom;
-    text-align: right;
-    overflow: hidden;
-    /* text-overflow: ellipsis; */
+  text-align: right;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 /* KEYPADS */
@@ -186,6 +187,10 @@ body {
   text-align: center;
   /* letter-spacing: -0.666667px; */
   color: #36362c;
+}
+.keypads input:active {
+  box-shadow: 5px 7px 5px #191f1e inset;
+  font-size: 200%;
 }
 
 .bottom input {
@@ -253,7 +258,7 @@ width: 100%;
   .key,
   .del,
   .reset,
-  .answer{
+  .answer {
     min-width: 30px;
     min-height: 32px;
     max-width: 100px;
@@ -262,8 +267,6 @@ width: 100%;
     line-height: 29px;
     display: flex;
     justify-content: center;
-   
-
   }
   .reset,
   .answer {
@@ -274,10 +277,10 @@ width: 100%;
     display: flex;
     justify-content: center;
   }
-  #display{
+  #display {
     font-size: 32px;
   }
-  #theme{
+  #theme {
     font-size: 10px;
   }
 }
