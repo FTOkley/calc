@@ -1,3 +1,7 @@
+"use strict";
+
+
+
 // const display = document.querySelector("#display");
 const input = document.querySelectorAll("input");
 let value = "";
@@ -23,9 +27,7 @@ let txt = document.getElementById("name", "theme", "number");
 let numb = document.getElementById("number");
 let toggle = document.getElementById("theme");
 
-// backKeypad.addEventListener("mouseover", mouseon);
 
-// backKeypad.addEventListener("mouseleave", mouseoff);
 
 input.forEach((e) => {
   e.addEventListener("click", (event) => {
@@ -43,7 +45,11 @@ input.forEach((e) => {
       display.value = display.value.replace(/\d$/, "");
       //console.log(display.value);
     } else if (event.target.value == "on") {
-    } else {
+      return;
+    } else if(display.value.length  >= 18){
+      return;
+    }
+     else {
       value += event.target.value;
       display.value = value;
     }
