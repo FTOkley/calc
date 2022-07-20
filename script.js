@@ -71,6 +71,22 @@ arr.forEach((element, index) => {
       numb.style["color"] = "white";
       toggle.style["color"] = "white";
 
+      ////////Changes for Answers Key
+      keys.forEach((key) => {
+       key.addEventListener("mouseover", overkey);
+      key.addEventListener("mouseout", outkey);
+
+      function overkey() {
+        key.style.backgroundColor = "#F96B5B";
+      }
+      function outkey() {
+        key.style.backgroundColor = "#C85402";
+      }
+
+
+      });
+      
+
       //keypads
       keys.forEach((key) => {
         key.style.backgroundColor = "hsl(30, 25%, 89%)";
@@ -84,30 +100,49 @@ arr.forEach((element, index) => {
         key.style.boxShadow = "inset 0px -4px 0px hsl(28, 16%, 65%)";
       });
 
-      del.addEventListener("mouseover", mouseOver);
-      del.addEventListener("mouseout", mouseOut);
+      ////////Changes for Answers Key
+      answers.addEventListener("mouseover", overanswers);
+      answers.addEventListener("mouseout", outanswers);
 
-      function mouseOver() {
-        del.style.backgroundColor = "#A2B2E1";
-        
+      function overanswers() {
+        answers.style.backgroundColor = "#F96B5B";
       }
-
-      function mouseOut() {
-        // del.style.backgroundColor = "black";
-        del.style.backgroundColor = "#647198";
-      
+      function outanswers() {
+        answers.style.backgroundColor = "#C85402";
       }
 
       answers.style["boxShadow"] = "inset 0px -4px 0px hsl(6, 70%, 34%)";
       answers.style["backgroundColor"] = "hsl(6, 63%, 50%)";
       answers.style["color"] = "hsl(0, 0, 100%)";
 
+      ///////Changes for reset key//////
+      reset.addEventListener("mouseover", overReset);
+      reset.addEventListener("mouseout", outReset);
+
+      function overReset() {
+        reset.style.backgroundColor = "#A2B2E1";
+      }
+      function outReset() {
+        reset.style.backgroundColor = "#647198";
+      }
       reset.style["boxShadow"] = "inset 0px -4px 0px hsl(224, 28%, 35%)";
-      reset.style["backgroundColor"] = "hsl(225, 21%, 49%)";
+      // reset.style["backgroundColor"] = "hsl(225, 21%, 49%)";
+
+      // /////////////Hover state for del key///////
 
       del.style["boxShadow"] = "inset 0px -4px 0px hsl(224, 28%, 35%)";
       // del.style["backgroundColor"] = "hsl(225, 21%, 49%)";
       del.style["color"] = "hsl(0, 0, 100%)";
+
+      del.addEventListener("mouseover", mouseOver);
+      del.addEventListener("mouseout", mouseOut);
+
+      function mouseOver() {
+        del.style.backgroundColor = "#A2B2E1";
+      }
+      function mouseOut() {
+        del.style.backgroundColor = "#647198";
+      }
     } else if (index == 1) {
       //main backgrounds
       backMain[0].style.backgroundColor = "hsl(0, 0%, 90%)";
