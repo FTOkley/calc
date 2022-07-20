@@ -34,7 +34,6 @@ input.forEach((e) => {
         let newVal = eval(value);
         value = newVal;
         display.value = value;
-
       }
     } else if (event.target.value == "RESET") {
       value = "";
@@ -50,8 +49,6 @@ input.forEach((e) => {
     }
   });
 });
-
-
 
 //Toggle switching by backgound color////
 var buttons = document.querySelectorAll(".button");
@@ -84,27 +81,33 @@ arr.forEach((element, index) => {
       });
 
       keys.forEach((key) => {
-        key.style.boxShadow = "0px 5px hsl(28, 16%, 65%)";
+        key.style.boxShadow = "inset 0px -4px 0px hsl(28, 16%, 65%)";
       });
 
-      /*
-      ///do the mouse hover on keys
-      hover.addEventListener("mouseenter", mouseon());
+      del.addEventListener("mouseover", mouseOver);
+      del.addEventListener("mouseout", mouseOut);
 
-      function mouseon() {
-        console.log((backKey.style.color = "black"));
-      };
-      */
+      function mouseOver() {
+        del.style.backgroundColor = "#A2B2E1";
+        
+      }
 
-      answers.style["boxShadow"] = "0 5px hsl(6, 70%, 34%)";
+      function mouseOut() {
+        // del.style.backgroundColor = "black";
+        del.style.backgroundColor = "#647198";
+      
+      }
+
+      answers.style["boxShadow"] = "inset 0px -4px 0px hsl(6, 70%, 34%)";
       answers.style["backgroundColor"] = "hsl(6, 63%, 50%)";
-      answers.style["color"] = "hsl(198, 20%, 13%)";
+      answers.style["color"] = "hsl(0, 0, 100%)";
 
-      reset.style["boxShadow"] = "0 5px hsl(224, 28%, 35%)";
+      reset.style["boxShadow"] = "inset 0px -4px 0px hsl(224, 28%, 35%)";
       reset.style["backgroundColor"] = "hsl(225, 21%, 49%)";
 
-      del.style["boxShadow"] = "0 5px hsl(224, 28%, 35%)";
-      del.style["backgroundColor"] = "hsl(225, 21%, 49%)";
+      del.style["boxShadow"] = "inset 0px -4px 0px hsl(224, 28%, 35%)";
+      // del.style["backgroundColor"] = "hsl(225, 21%, 49%)";
+      del.style["color"] = "hsl(0, 0, 100%)";
     } else if (index == 1) {
       //main backgrounds
       backMain[0].style.backgroundColor = "hsl(0, 0%, 90%)";
@@ -128,17 +131,18 @@ arr.forEach((element, index) => {
         key.style.color = "hsl(60, 10%, 19%)";
       });
       keys.forEach((key) => {
-        key.style.boxShadow = "0px 5px hsl(35, 11%, 61%)";
+        key.style.boxShadow = "inset 0px -4px 0px hsl(35, 11%, 61%)";
       });
 
-      answers.style["boxShadow"] = "0 5px hsl(25, 99%, 27%)";
+      answers.style["boxShadow"] = "inset 0px -4px 0px hsl(25, 99%, 27%)";
       answers.style["backgroundColor"] = "hsl(25, 98%, 40%)";
-      answers.style["color"] = "hsl(198, 20%, 13%)";
+      answers.style["color"] = "hsl(0, 0, 100%)";
+      del.style["color"] = "hsl(0, 0, 100%)";
 
-      reset.style["boxShadow"] = "0 5px hsl(185, 58%, 25%)";
+      reset.style["boxShadow"] = "inset 0px -4px 0px hsl(185, 58%, 25%)";
       reset.style["backgroundColor"] = "hsl(185, 42%, 37%)";
 
-      del.style["boxShadow"] = "0 5px hsl(185, 58%, 25%)";
+      del.style["boxShadow"] = "inset 0px -4px 0px hsl(185, 58%, 25%)";
       del.style["backgroundColor"] = "hsl(185, 42%, 37%)";
     } else {
       //Main Backgrounds
@@ -165,17 +169,17 @@ arr.forEach((element, index) => {
       });
 
       keys.forEach((key) => {
-        key.style.boxShadow = "0px 5px hsl(285, 91%, 52%)";
+        key.style.boxShadow = "inset 0px -4px 0px hsl(285, 91%, 52%)";
       });
 
-      answers.style["boxShadow"] = "0 5px hsl(177, 92%, 70%)";
+      answers.style["boxShadow"] = "inset 0px -4px 0px hsl(177, 92%, 70%)";
       console.log((answers.style["backgroundColor"] = "hsl(176, 100%, 44%)"));
       console.log((answers.style["color"] = "hsl(198, 20%, 13%)"));
 
-      reset.style["boxShadow"] = "0 5px hsl(285, 91%, 52%)";
+      reset.style["boxShadow"] = "inset 0px -4px 0px hsl(285, 91%, 52%)";
       reset.style["backgroundColor"] = "hsl(281, 89%, 26%)";
 
-      del.style["boxShadow"] = "0 5px hsl(285, 91%, 52%)";
+      del.style["boxShadow"] = "inset 0px -4px 0px hsl(285, 91%, 52%)";
       del.style["backgroundColor"] = "hsl(281, 89%, 26%)";
     }
     arr
