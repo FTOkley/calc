@@ -1,7 +1,3 @@
-"use strict";
-
-
-
 // const display = document.querySelector("#display");
 const input = document.querySelectorAll("input");
 let value = "";
@@ -27,7 +23,9 @@ let txt = document.getElementById("name", "theme", "number");
 let numb = document.getElementById("number");
 let toggle = document.getElementById("theme");
 
+// backKeypad.addEventListener("mouseover", mouseon);
 
+// backKeypad.addEventListener("mouseleave", mouseoff);
 
 input.forEach((e) => {
   e.addEventListener("click", (event) => {
@@ -45,47 +43,12 @@ input.forEach((e) => {
       display.value = display.value.replace(/\d$/, "");
       //console.log(display.value);
     } else if (event.target.value == "on") {
-      return;
-    } else if(display.value.length  >= 18){
-      return;
-    }
-     else {
+    } else {
       value += event.target.value;
       display.value = value;
     }
   });
 });
-
-   // filter if consecutive signs
-  let signs1 = str.match(/[+\-*/]/g);
-  if (signs1.length === 2) {
-    let throwAwayOne = str.match(/[+\-*/](?=[+*/])/g);
-    if (throwAwayOne) {
-      for (let i = 0; i < throwAwayOne.length; i++) {
-        str = str.replace(throwAwayOne[i], "");
-      }
-    }
-  } else if (signs1.length > 2) {
-    let throwAwayTwo = str.match(/[+\-*/](?!\d)/g);
-    if (throwAwayTwo) {
-      for (let i = 0; i < throwAwayTwo.length; i++) {
-        str = str.replace(throwAwayTwo[i], "");
-      }
-    }
-  }
-
-  // split between <signs that don't follow another sign>.
-  let numbers = str.split(/(?<![+\-*/])[+\-*/]/).map((n) => Number(n));
-  let signs2 = str.match(/[+\-*/]/g);
-
-  let mixed = [];
-  for (let i = 0; i < numbers.length; i++) {
-    mixed.push(numbers[i]);
-    if (signs2 && i < signs2.length) mixed.push(signs2[i]);
-  }
-
-
-
 
 //Toggle switching by backgound color////
 var buttons = document.querySelectorAll(".button");
