@@ -71,23 +71,19 @@ arr.forEach((element, index) => {
       numb.style["color"] = "white";
       toggle.style["color"] = "white";
 
-      ////////Changes for Answers Key
+      ////////Changes for numbers Keypad
       keys.forEach((key) => {
        key.addEventListener("mouseover", overkey);
       key.addEventListener("mouseout", outkey);
 
       function overkey() {
-        key.style.backgroundColor = "#F96B5B";
+        key.style.backgroundColor = "#Ffff";
       }
       function outkey() {
-        key.style.backgroundColor = "#C85402";
+        key.style.backgroundColor = "#EAE3DC";
       }
-
-
       });
       
-
-      //keypads
       keys.forEach((key) => {
         key.style.backgroundColor = "hsl(30, 25%, 89%)";
       });
@@ -158,6 +154,22 @@ arr.forEach((element, index) => {
       numb.style["color"] = "hsl(60, 10%, 19%)";
       toggle.style["color"] = "hsl(60, 10%, 19%)";
 
+
+
+
+       ////////Changes for numbers Keypad
+       keys.forEach((key) => {
+        key.addEventListener("mouseover", overkey);
+       key.addEventListener("mouseout", outkey);
+ 
+       function overkey() {
+         key.style.backgroundColor = "#Ffff";
+       }
+       function outkey() {
+         key.style.backgroundColor = "hsl(45, 7%, 89%)";
+       }
+       });
+
       //keypads
       keys.forEach((key) => {
         key.style.backgroundColor = "hsl(45, 7%, 89%)";
@@ -169,14 +181,48 @@ arr.forEach((element, index) => {
         key.style.boxShadow = "inset 0px -4px 0px hsl(35, 11%, 61%)";
       });
 
+
+
+      ////////Changes for Answers Key
+      answers.addEventListener("mouseover", overanswers);
+      answers.addEventListener("mouseout", outanswers);
+
+      function overanswers() {
+        answers.style.backgroundColor = "#FF8A38";
+      }
+      function outanswers() {
+        answers.style.backgroundColor = "#C85402";
+      }
+      
       answers.style["boxShadow"] = "inset 0px -4px 0px hsl(25, 99%, 27%)";
       answers.style["backgroundColor"] = "hsl(25, 98%, 40%)";
       answers.style["color"] = "hsl(0, 0, 100%)";
-      del.style["color"] = "hsl(0, 0, 100%)";
+      answers.style["color"] = "hsl(0, 0, 100%)";
 
+      ///////Changes for reset key//////
+      reset.addEventListener("mouseover", overReset);
+      reset.addEventListener("mouseout", outReset);
+
+      function overReset() {
+        reset.style.backgroundColor = "#62B5BC";
+      }
+      function outReset() {
+        reset.style.backgroundColor = "#378187";
+      }
+      reset.style["boxShadow"] = "inset 0px -4px 0px hsl(224, 28%, 35%)";
       reset.style["boxShadow"] = "inset 0px -4px 0px hsl(185, 58%, 25%)";
       reset.style["backgroundColor"] = "hsl(185, 42%, 37%)";
 
+////////changes for del hey
+      del.addEventListener("mouseover", mouseOver);
+      del.addEventListener("mouseout", mouseOut);
+
+      function mouseOver() {
+        del.style.backgroundColor = "#62B5BC";
+      };
+      function mouseOut() {
+        del.style.backgroundColor = "#378187";
+      };
       del.style["boxShadow"] = "inset 0px -4px 0px hsl(185, 58%, 25%)";
       del.style["backgroundColor"] = "hsl(185, 42%, 37%)";
     } else {
@@ -194,7 +240,20 @@ arr.forEach((element, index) => {
       toggle.style["color"] = "hsl(52, 100%, 62%)";
       numb.style["color"] = "hsl(52, 100%, 62%)";
 
-      //Keypads
+
+      ////////Changes for numbers Keypad
+      keys.forEach((key) => {
+        key.addEventListener("mouseover", overkey);
+       key.addEventListener("mouseout", outkey);
+ 
+       function overkey() {
+         key.style.backgroundColor = "#6C34AC";
+       }
+       function outkey() {
+         key.style.backgroundColor = "#331C4D";
+       }
+       });
+    
       keys.forEach((key) => {
         key.style.backgroundColor = "hsl(268, 47%, 21%)";
       });
@@ -207,13 +266,47 @@ arr.forEach((element, index) => {
         key.style.boxShadow = "inset 0px -4px 0px hsl(285, 91%, 52%)";
       });
 
+
+      ////////Changes for Answers Key
+      answers.addEventListener("mouseover", overanswers);
+      answers.addEventListener("mouseout", outanswers);
+
+      function overanswers() {
+        answers.style.backgroundColor = "#93FFF8";
+      }
+      function outanswers() {
+        answers.style.backgroundColor = "#00DED0";
+      }
       answers.style["boxShadow"] = "inset 0px -4px 0px hsl(177, 92%, 70%)";
       console.log((answers.style["backgroundColor"] = "hsl(176, 100%, 44%)"));
       console.log((answers.style["color"] = "hsl(198, 20%, 13%)"));
 
+
+        ///////Changes for reset key//////
+        reset.addEventListener("mouseover", overReset);
+        reset.addEventListener("mouseout", outReset);
+  
+        function overReset() {
+          reset.style.backgroundColor = "#8631AF";
+        }
+        function outReset() {
+          reset.style.backgroundColor = "hsl(281, 89%, 26%)";
+        }
+
       reset.style["boxShadow"] = "inset 0px -4px 0px hsl(285, 91%, 52%)";
       reset.style["backgroundColor"] = "hsl(281, 89%, 26%)";
 
+
+      ////////changes for del hey
+      del.addEventListener("mouseover", mouseOver);
+      del.addEventListener("mouseout", mouseOut);
+
+      function mouseOver() {
+        del.style.backgroundColor = "#8631AF";
+      };
+      function mouseOut() {
+        del.style.backgroundColor = "hsl(281, 89%, 26%)";
+      };
       del.style["boxShadow"] = "inset 0px -4px 0px hsl(285, 91%, 52%)";
       del.style["backgroundColor"] = "hsl(281, 89%, 26%)";
     }
