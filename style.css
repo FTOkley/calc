@@ -58,7 +58,7 @@ body {
   /* border: 1px solid red; */
   font-weight: 700;
   font-family: league Spartan;
-  /* font-size: 1rem; */
+  font-size: 1em;
 }
 #number ul {
   display: flex;
@@ -83,7 +83,7 @@ body {
   opacity: 0;
   cursor: pointer;
   transition: 0.4s;
-  margin: 3px 0;
+  margin: 5px 0;
 }
 #first {
   opacity: 1;
@@ -102,7 +102,7 @@ body {
 
 .switchbox {
   display: flex;
-  width: 53px;
+  width: 60px;
   justify-content: center;
   /* border: 3px solid rgb(229, 102, 102); */
   float: right;
@@ -135,13 +135,13 @@ body {
   line-height: 3rem;
   text-align: right;
   overflow: hidden;
-  text-overflow: ellipsis;
+  /* text-overflow: ellipsis; */
   white-space: nowrap;
 }
 
 /* KEYPADS */
 .keypads {
-  /* width: fit-content; */
+
   background-color: hsl(223, 31%, 20%);
   border-radius: 10px;
   /* border: 1px solid green; */
@@ -178,7 +178,7 @@ body {
   font-family: "League Spartan";
   font-style: normal;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 432px;
   line-height: 37px;
   align-items: center;
   text-align: center;
@@ -246,6 +246,7 @@ body {
   .calculator {
     width: 100%;
     margin: 24px;
+    min-width: 290px;
   }
   /* 
 .keypads{
@@ -260,10 +261,11 @@ width: 100%;
     min-height: 32px;
     max-width: 100px;
     margin: 0.5rem;
-    font-size: 20px;
+    font-size: 32px;
     line-height: 29px;
     display: flex;
     justify-content: center;
+    border-radius: 6px;
   }
   .reset,
   .answer {
@@ -274,8 +276,12 @@ width: 100%;
     display: flex;
     justify-content: center;
   }
+  .del, .reset{
+    font-size: large;
+  }
   #display {
     font-size: 32px;
+    padding: 1rem 1rem;
   }
   #theme {
     font-size: 10px;
