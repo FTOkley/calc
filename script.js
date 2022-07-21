@@ -32,7 +32,7 @@ input.forEach((e) => {
     if (event.target.value == "=") {
       if (value.length != 0) {
         let newVal = eval(value);
-        value = newVal;
+        console.log((value = newVal.toLocaleString("en-US")));
         display.value = value;
       }
     } else if (event.target.value == "RESET") {
@@ -40,8 +40,10 @@ input.forEach((e) => {
       display.value = value;
     } else if (event.target.value == "DEL") {
       value = "";
-      display.value = display.value.replace(/\d$/, "");
+      display.value = display.value.replace(/\d$/, "", );
       //console.log(display.value);
+    } else if (display.value.length >= 18) {
+      return;
     } else if (event.target.value == "on") {
     } else {
       value += event.target.value;

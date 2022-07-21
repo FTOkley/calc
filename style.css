@@ -58,7 +58,7 @@ body {
   /* border: 1px solid red; */
   font-weight: 700;
   font-family: league Spartan;
-  font-size: 1em;
+  font-size: 1rem;
   letter-spacing: 2px;
 }
 #number ul {
@@ -181,7 +181,7 @@ body {
   font-family: "League Spartan";
   font-style: normal;
   font-weight: 700;
-  font-size: 432px;
+  font-size: 32px;
   line-height: 37px;
   align-items: center;
   text-align: center;
