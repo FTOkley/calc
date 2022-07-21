@@ -59,6 +59,7 @@ body {
   font-weight: 700;
   font-family: league Spartan;
   font-size: 1em;
+  letter-spacing: 2px;
 }
 #number ul {
   display: flex;
@@ -67,10 +68,12 @@ body {
   list-style: none;
   justify-content: center;
   float: right;
-  right: 5px;
+  top: 10px;
+  right: 10px;
 }
 #number li {
-  padding-left: 10px;
+  padding-left: 12px;
+  font-size: x-small;
   /* color: aliceblue; */
 }
 
