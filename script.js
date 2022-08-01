@@ -23,9 +23,7 @@ let txt = document.getElementById("name", "theme", "number");
 let numb = document.getElementById("number");
 let toggle = document.getElementById("theme");
 
-// backKeypad.addEventListener("mouseover", mouseon);
 
-// backKeypad.addEventListener("mouseleave", mouseoff);
 
 input.forEach((e) => {
   e.addEventListener("click", (event) => {
