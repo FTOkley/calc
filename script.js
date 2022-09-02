@@ -50,6 +50,7 @@ input.forEach((e) => {
   });
 });
 
+
 //Toggle switching by backgound color////
 var buttons = document.querySelectorAll(".button");
 var arr = [...buttons];
